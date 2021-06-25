@@ -1,0 +1,212 @@
+{
+    "users": [{
+            "id": 1,
+            "email": "admin@admin.fr",
+            "username": "admin",
+            "password": "admin"
+        },
+        {
+            "id": 2,
+            "email": "user@user.fr",
+            "username": "babagreno",
+            "password": "admin"
+        },
+        {
+            "email": "collignonbaptiste@gmail.com",
+            "password": "$2a$10$gm.ieVbuf1AExjFBkk4TcuMC36tLkw.2uVZfNkma0VqnDWKuWu1aS",
+            "firstname": "Baptiste",
+            "lastname": "Collignon",
+            "school": "azea",
+            "degree": "5",
+            "id": 3
+        }
+    ],
+    "games": [{
+            "id": 1,
+            "name": "partie Test 1 - finie",
+            "limit_user": 10,
+            "vocal": true,
+            "status": 3,
+            "userId": 1,
+            "players": [{
+                "playerId1": 1,
+                "playerId2": 2,
+                "playerId3": 7,
+                "playerId4": 4,
+                "playerId5": 9
+            }]
+        },
+        {
+            "id": 2,
+            "name": "Hortipute finie",
+            "limit_user": 10,
+            "vocal": false,
+            "status": 3,
+            "userId": 1,
+            "players": [{
+                "playerId1": 3,
+                "playerId2": 5,
+                "playerId3": 6,
+                "playerId4": 8
+            }]
+        },
+        {
+            "id": 3,
+            "name": "partie en attente de lancement privée",
+            "limit_user": 10,
+            "vocal": true,
+            "private": true,
+            "code": 123123,
+            "status": 1,
+            "userId": 1,
+            "players": [{
+                "playerId1": 1,
+                "playerId2": 2,
+                "playerId3": 7,
+                "playerId4": 4,
+                "playerId5": 9
+            }],
+            "roles": [{
+                    "roleId": 1
+                },
+                {
+                    "roleId": 2
+                },
+                {
+                    "roleId": 3
+                },
+                {
+                    "roleId": 4
+                },
+                {
+                    "roleId": 5
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "partie en attente de lancement public",
+            "limit_user": 10,
+            "vocal": true,
+            "private": false,
+            "status": 1,
+            "userId": 1,
+            "players": [{
+                "playerId1": 1,
+                "playerId2": 2,
+                "playerId3": 7,
+                "playerId4": 4,
+                "playerId5": 9
+            }]
+        }
+    ],
+    "players": [{
+            "id": 1,
+            "name": "Pierre"
+        },
+        {
+            "id": 2,
+            "name": "Clothilde"
+        }
+    ],
+    "en": [{
+        "roles": [{
+                "id": 1,
+                "name": "Mayor",
+                "scenario": "Lorem ipsum",
+                "littoralIds": [{
+                    "littoralId": 1
+                }, {
+                    "littoralId": 2
+                }]
+            },
+            {
+                "id": 2,
+                "name": "Journalist",
+                "scenario": "Lorem ipsum",
+                "littoralIds": [{
+                    "littoralId": 1
+                }, {
+                    "littoralId": 2
+                }]
+            },
+            {
+                "id": 3,
+                "name": "Scuba diver",
+                "scenario": "Lorem ipsum",
+                "littoralIds": [{
+                    "littoralId": 1
+                }, {
+                    "littoralId": 2
+                }]
+            },
+            {
+                "id": 4,
+                "name": "Cyclist",
+                "scenario": "Lorem ipsum",
+                "littoralIds": [{
+                    "littoralId": 1
+                }, {
+                    "littoralId": 2
+                }]
+            }
+        ],
+        "littorals": [{
+            "id": 1,
+            "name": "Rocky"
+        }, {
+            "id": 2,
+            "name": "Sandy"
+        }]
+    }],
+    "fr": [{
+        "roles": [{
+                "id": 1,
+                "name": "Maire",
+                "scenario": "Lorem ipsum",
+                "littoralIds": [{
+                    "littoralId": 1
+                }, {
+                    "littoralId": 2
+                }]
+            },
+            {
+                "id": 2,
+                "name": "Journaliste",
+                "scenario": "Lorem ipsum",
+                "littoralIds": [{
+                    "littoralId": 1
+                }, {
+                    "littoralId": 2
+                }]
+            },
+            {
+                "id": 3,
+                "name": "Plongeur",
+                "scenario": "Lorem ipsum",
+                "littoralIds": [{
+                    "littoralId": 1
+                }, {
+                    "littoralId": 2
+                }]
+            },
+            {
+                "id": 4,
+                "name": "Cycliste",
+                "scenario": "Lorem ipsum",
+                "littoralIds": [{
+                    "littoralId": 1
+                }, {
+                    "littoralId": 2
+                }]
+            }
+        ],
+        "littorals": [{
+            "id": 1,
+            "name": "Rocheux"
+        }, {
+            "id": 2,
+            "name": "Sableux"
+        }]
+    }]
+}

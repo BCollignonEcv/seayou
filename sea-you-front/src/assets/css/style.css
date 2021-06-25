@@ -1,0 +1,299 @@
+:root {
+    --header-height: 80px;
+    --color-primary: #9EC6D2;
+    --color-primary-hover: #9EC6D2;
+    --color-secondary: #2F4859;
+    --color-secondary-hover: #2F4859;
+    --color-thirdly: #E79F89;
+    --color-thirdly-hover: #E79F89;
+    --color-fourth: #FBEECB;
+    --color-fifth: #4E8490;
+    --color-neutral: #fff;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('~@/assets/fonts/HelveticaNeue-Bold-02.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('~@/assets/fonts/HelveticaNeue-LightItalic-09.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('~@/assets/fonts/HelveticaNeue-01.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'HelveticaNeue';
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: var(--color-neutral);
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+/**************TEXT*****************/
+
+h1 {
+    color: var(--color-primary);
+    margin: var(--size-xsmall);
+    font-size: var(--size-large);
+}
+
+h2 {
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: var(--color-neutral);
+    font-size: 1.5rem;
+}
+
+p {
+    color: var(--color-neutral);
+    font-size: 1rem;
+}
+
+p.primary {
+    color: var(--color-neutral);
+    font-size: 1rem;
+}
+
+p.secondary {
+    color: var(--color-neutral);
+    font-size: 1rem;
+}
+
+p.thirdly {
+    color: var(--color-neutral);
+    font-size: 1rem;
+}
+
+p.fourth {
+    color: var(--color-neutral);
+    font-size: 1rem;
+}
+
+p.error {
+    color: red;
+    font-size: 1rem;
+}
+
+p a {
+    color: var(--color-thirdly);
+    cursor: pointer;
+}
+
+
+/****************LISTE*************/
+
+ul {
+    padding: var(--size-xsmall);
+}
+
+li {
+    padding: var(--size-xsmall);
+}
+
+
+/*************BUTTON****************/
+
+.btn {
+    border: none;
+    font-size: 22px;
+    border-radius: var(--size-xsmall);
+    padding: 12px 12px;
+    display: block;
+    text-align: center;
+    border-radius: 25px;
+    margin: auto;
+    min-width: 200px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--color-secondary-hover);
+}
+
+.btn.btn_small {}
+
+.btn.btn_large {
+    width: 250px;
+}
+
+.btn.btn_primary {
+    background-color: var(--color-primary);
+    color: var(--color-neutral);
+}
+
+.btn.btn_primary:hover {
+    background-color: var(--color-thirdly);
+    color: var(--color-fourth);
+}
+
+.btn.btn_secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-neutral);
+}
+
+.btn.btn_secondary:hover {
+    color: var(--color-neutral);
+}
+
+.btn.btn_thirdly {
+    background-color: var(--color-thirdly);
+    color: var(--color-fourth);
+}
+
+.btn.btn_thirdly:hover {}
+
+
+/**************INPUT****************/
+
+input[type="number"],
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea,
+select {
+    border: none;
+    font-size: 22px;
+    border-radius: var(--size-xsmall);
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
+    border-radius: 25px;
+    margin: auto;
+    background-color: var(--color-neutral);
+    color: var(--color-fifth);
+    width: 100%;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+input::placeholder {
+    color: var(--color-secondary);
+}
+
+label+input[type="number"],
+label+input[type="text"],
+label+input[type="email"],
+label+input[type="password"],
+label+input[type="number"]:focus,
+label+input[type="text"]:focus,
+label+input[type="email"]:focus,
+label+input[type="password"]:focus,
+label+select {
+    margin-top: .5rem;
+}
+
+
+/**************IMG****************/
+
+.logo-w-responsive {
+    height: auto;
+    width: 100%;
+}
+
+.logo-h-big {
+    height: 25vh;
+    width: auto;
+}
+
+.logo-h-medium {
+    height: 15vh;
+    width: auto;
+}
+
+.logo-h-small {
+    height: 8vh;
+    width: auto;
+}
+
+.background_littoral {
+    background-image: url('~@/assets/img/littorals/littoral_sableux_filter.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background_littoral_game {
+    background-image: url('~@/assets/img/littorals/littoral_sableux.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*********************************
+/*                               *
+/*            LAYER              *
+/*                               *
+/*********************************/
+
+
+/**************CONTAINER************/
+
+.wrapper-center {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.interface-center {
+    height: min-content;
+    text-align: center;
+    margin: auto;
+}
+
+.interface-center>*~* {
+    margin-top: 30px;
+}
+
+.interface-center .btn+.btn {
+    margin-top: 1.5rem;
+}
+
+.form_container>*~* {
+    margin-top: 1.5rem;
+}
+
+.form_container>*+.btn {
+    margin-top: 2rem;
+}
+
+
+/****************FLEX***************/
+
+.flex {
+    display: flex;
+}
+
+.flex.justify-between {
+    justify-content: space-between;
+}
+
+
+/************CUSTOM***************/
