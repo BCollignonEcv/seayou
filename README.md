@@ -15,4 +15,5 @@
     - Mongoose
     - Socket.io
     - Peer.js
-3. MongoDB
+3. Base de données : 
+    - MongoDB
